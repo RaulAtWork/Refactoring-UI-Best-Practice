@@ -1,0 +1,16 @@
+.container {
+  width: min(100% - 2rem, 60rem);
+  display: flex;
+  background-color: white;
+  margin: 0 auto;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.header {
+  background-color: hsl(17, 100%, 50%);
+}
+
+.footer {
+  background-color: hsl(17, 100%, 30%);
+}/*# sourceMappingURL=index.css.map */
