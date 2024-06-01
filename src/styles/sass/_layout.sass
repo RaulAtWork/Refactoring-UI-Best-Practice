@@ -1,18 +1,19 @@
 @use "variables"
 
 .container
-    width: min(100% - 2rem, 60rem)
+    max-width: min(100% - 2rem, 60rem)
     display: flex
+    flex-grow: 1
+    flex-direction: column
     background-color: white
     margin: 0 auto
-    flex-grow: 1
-    padding: variables.$padding-normal
+    padding: variables.$padding-medium
 
 .header
-    background-color: variables.$primary-color
+    background-color: variables.$primary-color-s1
     padding: .5rem 1rem
 .footer
-    background-color: variables.$primary-color-shade-1
+    background-color: variables.$primary-color-s1
 
 .flex-columns
     display: flex
@@ -21,3 +22,25 @@
 .main-content
     display: flex
     flex: 1
+
+.side-bar
+    display: flex
+    flex-direction: column
+    border: 1px solid black
+    flex: 0 0 350px //prevent resizing
+    padding: variables.$padding-medium
+    align-items: center
+
+.side-bar-list
+    width: fit-content
+
+.container-side-and-content
+    display: flex
+    flex: 1
+    flex-direction: row
+
+.color-list
+    display: flex
+    flex-direction: columns
+    flex-wrap: wrap
+    gap: 10px

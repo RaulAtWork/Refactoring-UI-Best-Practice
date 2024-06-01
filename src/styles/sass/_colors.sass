@@ -1,0 +1,12 @@
+@use 'variables'
+
+$color-primary-list: variables.$primary-color-s1 variables.$primary-color-s2 variables.$primary-color-s3 variables.$primary-color-s4 variables.$primary-color-s5 variables.$primary-color-s6 variables.$primary-color-s7 variables.$primary-color-s8 variables.$primary-color-s9
+
+@for $i from 1 to length($color-primary-list)+1
+    .bg-primary-s#{$i}
+        background-color: nth($color-primary-list, $i)
+    .text-color-primary-s#{$i}
+        @if (red(nth($color-primary-list, $i))*0.299 + green(nth($color-primary-list, $i))*0.587+ blue(nth($color-primary-list, $i))*0.114) / 255 > 0.5
+            color: #000000
+        @else
+            color: #ffffff
