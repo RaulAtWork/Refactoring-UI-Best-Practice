@@ -9,6 +9,7 @@
 
 .header {
   background-color: hsl(17, 100%, 50%);
+  padding: 0.5rem 1rem;
 }
 
 .footer {
@@ -18,6 +19,11 @@
 .flex-columns {
   display: flex;
   flex-direction: column;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
 }
 
 .primary-button {
