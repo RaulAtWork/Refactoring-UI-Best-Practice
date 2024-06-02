@@ -42,6 +42,17 @@ function ColorShades() {
           textColor="text-color-primary-s9"
         />
       </div>
+      <div className="color-list">
+        <ColorElement bgColor="bg-accent-s1" textColor="text-color-accent-s1" />
+        <ColorElement bgColor="bg-accent-s2" textColor="text-color-accent-s2" />
+        <ColorElement bgColor="bg-accent-s3" textColor="text-color-accent-s3" />
+        <ColorElement bgColor="bg-accent-s4" textColor="text-color-accent-s4" />
+        <ColorElement bgColor="bg-accent-s5" textColor="text-color-accent-s5" />
+        <ColorElement bgColor="bg-accent-s6" textColor="text-color-accent-s6" />
+        <ColorElement bgColor="bg-accent-s7" textColor="text-color-accent-s7" />
+        <ColorElement bgColor="bg-accent-s8" textColor="text-color-accent-s8" />
+        <ColorElement bgColor="bg-accent-s9" textColor="text-color-accent-s9" />
+      </div>
     </article>
   );
 }

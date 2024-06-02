@@ -1,5 +1,6 @@
 import React from "react";
 import ColorShades from "./Gallery/ColorShades";
+import Headers16 from "./Gallery/Headers16";
 
 function Gallery() {
   return (
@@ -16,8 +17,8 @@ function Gallery() {
         </ul>
       </section>
       <section className="container">
-        <h1>this will have some shees</h1>
         <ColorShades />
+        <Headers16 />
       </section>
     </div>
   );

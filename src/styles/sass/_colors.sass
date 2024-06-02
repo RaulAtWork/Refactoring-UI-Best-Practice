@@ -10,3 +10,13 @@ $color-primary-list: variables.$primary-color-s1 variables.$primary-color-s2 var
             color: #000000
         @else
             color: #ffffff
+
+$color-accent-list: variables.$accent-color-s1 variables.$accent-color-s2 variables.$accent-color-s3 variables.$accent-color-s4 variables.$accent-color-s5 variables.$accent-color-s6 variables.$accent-color-s7 variables.$accent-color-s8 variables.$accent-color-s9
+@for $i from 1 to length($color-accent-list)+1
+    .bg-accent-s#{$i}
+        background-color: nth($color-accent-list, $i)
+    .text-color-accent-s#{$i}
+        @if (red(nth($color-accent-list, $i))*0.299 + green(nth($color-accent-list, $i))*0.587+ blue(nth($color-accent-list, $i))*0.114) / 255 > 0.5
+            color: #000000
+        @else
+            color: #ffffff

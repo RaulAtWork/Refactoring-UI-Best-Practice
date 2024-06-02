@@ -1,3 +1,13 @@
+/* LIGHT THEME*/
+:root {
+  --primary-color-100: hsl(190, 100%, 10%);
+}
+
+/* DARK THEME */
+:root [data-theme=dark] {
+  --primary-color-100: black;
+}
+
 .bg-primary-s1 {
   background-color: hsl(190, 100%, 10%);
 }
@@ -70,6 +80,78 @@
   color: #000000;
 }
 
+.bg-accent-s1 {
+  background-color: hsl(262, 100%, 16%);
+}
+
+.text-color-accent-s1 {
+  color: #ffffff;
+}
+
+.bg-accent-s2 {
+  background-color: hsl(262, 100%, 27%);
+}
+
+.text-color-accent-s2 {
+  color: #ffffff;
+}
+
+.bg-accent-s3 {
+  background-color: hsl(262, 100%, 33%);
+}
+
+.text-color-accent-s3 {
+  color: #ffffff;
+}
+
+.bg-accent-s4 {
+  background-color: hsl(262, 100%, 35%);
+}
+
+.text-color-accent-s4 {
+  color: #ffffff;
+}
+
+.bg-accent-s5 {
+  background-color: hsl(262, 100%, 38%);
+}
+
+.text-color-accent-s5 {
+  color: #ffffff;
+}
+
+.bg-accent-s6 {
+  background-color: hsl(262, 82%, 44%);
+}
+
+.text-color-accent-s6 {
+  color: #ffffff;
+}
+
+.bg-accent-s7 {
+  background-color: hsl(262, 70%, 49%);
+}
+
+.text-color-accent-s7 {
+  color: #ffffff;
+}
+
+.bg-accent-s8 {
+  background-color: hsl(262, 71%, 59%);
+}
+
+.text-color-accent-s8 {
+  color: #ffffff;
+}
+
+.bg-accent-s9 {
+  background-color: hsl(262, 100%, 80%);
+}
+
+.text-color-accent-s9 {
+  color: #000000;
+}
+
 .container {
   max-width: min(100% - 2rem, 60rem);
   display: flex;
@@ -81,7 +163,7 @@
 }
 
 .header {
-  background-color: hsl(190, 100%, 10%);
+  background-color: var(--primary-color-100);
   padding: 0.5rem 1rem;
 }
 

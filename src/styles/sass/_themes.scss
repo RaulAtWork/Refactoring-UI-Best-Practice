@@ -1,0 +1,12 @@
+@use "variables" as *;
+
+/* LIGHT THEME*/
+:root {
+    --primary-color-100: #{$primary-color-s1};
+}
+
+/* DARK THEME */
+:root [data-theme="dark"]{
+    --primary-color-100: black;
+
+}
