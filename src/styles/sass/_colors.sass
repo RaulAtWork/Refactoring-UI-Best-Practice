@@ -1,22 +1,17 @@
 @use 'variables'
 
-$color-primary-list: variables.$primary-color-s1 variables.$primary-color-s2 variables.$primary-color-s3 variables.$primary-color-s4 variables.$primary-color-s5 variables.$primary-color-s6 variables.$primary-color-s7 variables.$primary-color-s8 variables.$primary-color-s9
+$color-primary-list: var(--primary-color-100) var(--primary-color-200) var(--primary-color-300) var(--primary-color-400) var(--primary-color-500) var(--primary-color-600) var(--primary-color-700) var(--primary-color-800) var(--primary-color-900)
 
 @for $i from 1 to length($color-primary-list)+1
     .bg-primary-s#{$i}
         background-color: nth($color-primary-list, $i)
-    .text-color-primary-s#{$i}
-        @if (red(nth($color-primary-list, $i))*0.299 + green(nth($color-primary-list, $i))*0.587+ blue(nth($color-primary-list, $i))*0.114) / 255 > 0.5
-            color: #000000
-        @else
-            color: #ffffff
 
-$color-accent-list: variables.$accent-color-s1 variables.$accent-color-s2 variables.$accent-color-s3 variables.$accent-color-s4 variables.$accent-color-s5 variables.$accent-color-s6 variables.$accent-color-s7 variables.$accent-color-s8 variables.$accent-color-s9
+$color-accent-list: var(--accent-color-100) var(--accent-color-200) var(--accent-color-300) var(--accent-color-400) var(--accent-color-500) var(--accent-color-600) var(--accent-color-700) var(--accent-color-800) var(--accent-color-900)
 @for $i from 1 to length($color-accent-list)+1
     .bg-accent-s#{$i}
         background-color: nth($color-accent-list, $i)
-    .text-color-accent-s#{$i}
-        @if (red(nth($color-accent-list, $i))*0.299 + green(nth($color-accent-list, $i))*0.587+ blue(nth($color-accent-list, $i))*0.114) / 255 > 0.5
-            color: #000000
-        @else
-            color: #ffffff
+
+$color-neutral-list: var(--neutral-color-100) var(--neutral-color-200) var(--neutral-color-300) var(--neutral-color-400) var(--neutral-color-500) var(--neutral-color-600) var(--neutral-color-700) var(--neutral-color-800) var(--neutral-color-900)
+@for $i from 1 to length($color-neutral-list)+1
+    .bg-neutral-s#{$i}
+        background-color: nth($color-neutral-list, $i)

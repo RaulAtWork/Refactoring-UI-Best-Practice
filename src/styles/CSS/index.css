@@ -1,155 +1,149 @@
 /* LIGHT THEME*/
 :root {
   --primary-color-100: hsl(190, 100%, 10%);
+  --primary-color-200: hsl(190, 100%, 25%);
+  --primary-color-300: hsl(190, 90%, 34%);
+  --primary-color-400: hsl(190, 85%, 38%);
+  --primary-color-500: hsl(190, 85%, 42%);
+  --primary-color-600: hsl(190, 86%, 47%);
+  --primary-color-700: hsl(190, 77%, 51%);
+  --primary-color-800: hsl(190, 82%, 59%);
+  --primary-color-900: hsl(190, 100%, 76%);
+  --accent-color-100: hsl(262, 100%, 16%);
+  --accent-color-200: hsl(262, 100%, 27%);
+  --accent-color-300: hsl(262, 100%, 33%);
+  --accent-color-400: hsl(262, 100%, 35%);
+  --accent-color-500: hsl(262, 100%, 38%);
+  --accent-color-600: hsl(262, 82%, 44%);
+  --accent-color-700: hsl(262, 70%, 49%);
+  --accent-color-800: hsl(262, 71%, 59%);
+  --accent-color-900: hsl(262, 100%, 80%);
+  --neutral-color-100: hsl(210, 11%, 15%);
+  --neutral-color-200: hsl(210, 10%, 23%);
+  --neutral-color-300: hsl(210, 9%, 31%);
+  --neutral-color-400: hsl(210, 7%, 46%);
+  --neutral-color-500: hsl(210, 11%, 71%);
+  --neutral-color-600: hsl(210, 14%, 83%);
+  --neutral-color-700: hsl(210, 14%, 89%);
+  --neutral-color-800: hsl(210, 16%, 93%);
+  --neutral-color-900: hsl(210, 17%, 98%);
+  --text-color: black;
+  --text-color-contrast: white;
 }
 
 /* DARK THEME */
 :root [data-theme=dark] {
   --primary-color-100: black;
+  --text-color: white;
+  --text-color-contrast: black;
 }
 
 .bg-primary-s1 {
-  background-color: hsl(190, 100%, 10%);
-}
-
-.text-color-primary-s1 {
-  color: #ffffff;
+  background-color: var(--primary-color-100);
 }
 
 .bg-primary-s2 {
-  background-color: hsl(190, 100%, 25%);
-}
-
-.text-color-primary-s2 {
-  color: #ffffff;
+  background-color: var(--primary-color-200);
 }
 
 .bg-primary-s3 {
-  background-color: hsl(190, 100%, 34%);
-}
-
-.text-color-primary-s3 {
-  color: #ffffff;
+  background-color: var(--primary-color-300);
 }
 
 .bg-primary-s4 {
-  background-color: hsl(190, 100%, 38%);
-}
-
-.text-color-primary-s4 {
-  color: #ffffff;
+  background-color: var(--primary-color-400);
 }
 
 .bg-primary-s5 {
-  background-color: hsl(190, 100%, 42%);
-}
-
-.text-color-primary-s5 {
-  color: #000000;
+  background-color: var(--primary-color-500);
 }
 
 .bg-primary-s6 {
-  background-color: hsl(190, 86%, 47%);
-}
-
-.text-color-primary-s6 {
-  color: #000000;
+  background-color: var(--primary-color-600);
 }
 
 .bg-primary-s7 {
-  background-color: hsl(190, 77%, 51%);
-}
-
-.text-color-primary-s7 {
-  color: #000000;
+  background-color: var(--primary-color-700);
 }
 
 .bg-primary-s8 {
-  background-color: hsl(190, 82%, 59%);
-}
-
-.text-color-primary-s8 {
-  color: #000000;
+  background-color: var(--primary-color-800);
 }
 
 .bg-primary-s9 {
-  background-color: hsl(190, 100%, 76%);
-}
-
-.text-color-primary-s9 {
-  color: #000000;
+  background-color: var(--primary-color-900);
 }
 
 .bg-accent-s1 {
-  background-color: hsl(262, 100%, 16%);
-}
-
-.text-color-accent-s1 {
-  color: #ffffff;
+  background-color: var(--accent-color-100);
 }
 
 .bg-accent-s2 {
-  background-color: hsl(262, 100%, 27%);
-}
-
-.text-color-accent-s2 {
-  color: #ffffff;
+  background-color: var(--accent-color-200);
 }
 
 .bg-accent-s3 {
-  background-color: hsl(262, 100%, 33%);
-}
-
-.text-color-accent-s3 {
-  color: #ffffff;
+  background-color: var(--accent-color-300);
 }
 
 .bg-accent-s4 {
-  background-color: hsl(262, 100%, 35%);
-}
-
-.text-color-accent-s4 {
-  color: #ffffff;
+  background-color: var(--accent-color-400);
 }
 
 .bg-accent-s5 {
-  background-color: hsl(262, 100%, 38%);
-}
-
-.text-color-accent-s5 {
-  color: #ffffff;
+  background-color: var(--accent-color-500);
 }
 
 .bg-accent-s6 {
-  background-color: hsl(262, 82%, 44%);
-}
-
-.text-color-accent-s6 {
-  color: #ffffff;
+  background-color: var(--accent-color-600);
 }
 
 .bg-accent-s7 {
-  background-color: hsl(262, 70%, 49%);
-}
-
-.text-color-accent-s7 {
-  color: #ffffff;
+  background-color: var(--accent-color-700);
 }
 
 .bg-accent-s8 {
-  background-color: hsl(262, 71%, 59%);
-}
-
-.text-color-accent-s8 {
-  color: #ffffff;
+  background-color: var(--accent-color-800);
 }
 
 .bg-accent-s9 {
-  background-color: hsl(262, 100%, 80%);
+  background-color: var(--accent-color-900);
 }
 
-.text-color-accent-s9 {
-  color: #000000;
+.bg-neutral-s1 {
+  background-color: var(--neutral-color-100);
+}
+
+.bg-neutral-s2 {
+  background-color: var(--neutral-color-200);
+}
+
+.bg-neutral-s3 {
+  background-color: var(--neutral-color-300);
+}
+
+.bg-neutral-s4 {
+  background-color: var(--neutral-color-400);
+}
+
+.bg-neutral-s5 {
+  background-color: var(--neutral-color-500);
+}
+
+.bg-neutral-s6 {
+  background-color: var(--neutral-color-600);
+}
+
+.bg-neutral-s7 {
+  background-color: var(--neutral-color-700);
+}
+
+.bg-neutral-s8 {
+  background-color: var(--neutral-color-800);
+}
+
+.bg-neutral-s9 {
+  background-color: var(--neutral-color-900);
 }
 
 .container {
@@ -163,12 +157,14 @@
 }
 
 .header {
-  background-color: var(--primary-color-100);
+  background-color: var(--primary-color-700);
   padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .footer {
-  background-color: hsl(190, 100%, 10%);
+  background-color: var(--primary-color-700);
 }
 
 .flex-columns {
@@ -207,54 +203,71 @@
   gap: 10px;
 }
 
-.primary-button {
-  background-color: transparent;
+.navbar {
+  gap: 15px;
+  display: flex;
+}
+.navbar > a {
+  text-decoration: none;
+  text-transform: uppercase;
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+.navbar a.active {
+  color: var(--primary-color-200);
+}
+
+.primary-button {
+  font-weight: bold;
   padding: 0.5em 0.75em;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
   width: fit-content;
-  background-color: blue;
-  border: 2px solid blue;
+  background-color: var(--primary-color-500);
+  border: 2px solid var(--primary-color-500);
+  color: var(--neutral-color-900);
 }
 .primary-button:hover {
-  background-color: darkblue;
-  border: 2px solid darkblue;
+  background-color: var(--primary-color-200);
+  border: 2px solid var(--primary-color-200);
 }
 
 .secondary-button {
-  background-color: transparent;
   font-weight: bold;
-  color: white;
   padding: 0.5em 0.75em;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
   width: fit-content;
-  border: 2px solid grey;
-  color: blue;
+  border: 2px solid var(--neutral-color-500);
+  color: var(--primary-color-500);
+}
+.secondary-button:hover {
+  background-color: var(--primary-color-200);
+  border: 2px solid var(--primary-color-200);
 }
 
 .secondary-button-contrast {
-  background-color: transparent;
   font-weight: bold;
-  color: white;
   padding: 0.5em 0.75em;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
   width: fit-content;
-  background-color: lightblue;
-  border: 2px solid lightblue;
-  color: blue;
+  background-color: var(--primary-color-900);
+  border: 2px solid var(--primary-color-900);
+  color: var(--primary-color-200);
+}
+.secondary-button-contrast:hover {
+  background-color: var(--primary-color-700);
+  border: 2px solid var(--primary-color-700);
 }
 
 .tertiary-button {
-  background-color: transparent;
   font-weight: bold;
-  color: white;
   padding: 0.5em 0.75em;
   border-radius: 5px;
   cursor: pointer;
@@ -264,9 +277,7 @@
 }
 
 select {
-  background-color: transparent;
   font-weight: bold;
-  color: white;
   padding: 0.5em 0.75em;
   border-radius: 5px;
   cursor: pointer;
@@ -285,4 +296,8 @@ select {
 }
 .color-shade span {
   font-size: 10px;
+}
+
+.color-selector {
+  margin-left: auto;
 }/*# sourceMappingURL=index.css.map */

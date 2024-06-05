@@ -10,10 +10,12 @@
     padding: variables.$padding-medium
 
 .header
-    background-color: var(--primary-color-100)
+    background-color: var(--primary-color-700)
     padding: .5rem 1rem
+    display: flex
+    flex-direction: row
 .footer
-    background-color: variables.$primary-color-s1
+    background-color: var(--primary-color-700)
 
 .flex-columns
     display: flex
@@ -44,3 +46,17 @@
     flex-direction: columns
     flex-wrap: wrap
     gap: 10px
+
+.navbar
+    gap: 20px
+    display: flex
+
+    > a
+        text-decoration: none
+        text-transform: uppercase
+        font-weight: bold
+        color: var(--text-color)
+        display: flex
+        align-items: center
+    a.active
+        color: var(--primary-color-200)

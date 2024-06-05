@@ -8,7 +8,11 @@ function ThemeSelector() {
   }
 
   return (
-    <select value={themeMode} onChange={onThemeChange}>
+    <select
+      className="color-selector"
+      value={themeMode}
+      onChange={onThemeChange}
+    >
       <option value={THEMES.LIGHT}>Light</option>
       <option value={THEMES.DARK}>Dark</option>
       <option value={THEMES.USER}>User</option>

@@ -2,23 +2,29 @@
 
 .primary-button
     @include mixins.button
-    background-color: blue
-    border: 2px solid blue
+    background-color: var(--primary-color-500)
+    border: 2px solid var(--primary-color-500)
+    color: var(--neutral-color-900)
     &:hover
-        background-color: darkblue
-        border: 2px solid darkblue
+        background-color: var(--primary-color-200)
+        border: 2px solid var(--primary-color-200)
 
 .secondary-button
     @include mixins.button
-    border: 2px solid grey
-    color: blue
+    border: 2px solid var(--neutral-color-500)
+    color: var(--primary-color-500)
+    &:hover
+        background-color: var(--primary-color-200)
+        border: 2px solid var(--primary-color-200)
 
 .secondary-button-contrast
     @include mixins.button
-    background-color: lightblue
-    border: 2px solid lightblue
-    color: blue
-
+    background-color: var(--primary-color-900)
+    border: 2px solid var(--primary-color-900)
+    color: var(--primary-color-200)
+    &:hover
+        background-color: var(--primary-color-700)
+        border: 2px solid var(--primary-color-700)
 .tertiary-button
     @include mixins.button
     color: black

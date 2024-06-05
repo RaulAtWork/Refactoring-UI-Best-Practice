@@ -5,30 +5,12 @@ function ColorShades() {
     <article>
       <h1>Color Shade</h1>
       <div className="color-list">
-        <ColorElement
-          bgColor="bg-primary-s1"
-          textColor="text-color-primary-s1"
-        />
-        <ColorElement
-          bgColor="bg-primary-s2"
-          textColor="text-color-primary-s2"
-        />
-        <ColorElement
-          bgColor="bg-primary-s3"
-          textColor="text-color-primary-s3"
-        />
-        <ColorElement
-          bgColor="bg-primary-s4"
-          textColor="text-color-primary-s4"
-        />
-        <ColorElement
-          bgColor="bg-primary-s5"
-          textColor="text-color-primary-s5"
-        />
-        <ColorElement
-          bgColor="bg-primary-s6"
-          textColor="text-color-primary-s6"
-        />
+        <ColorElement bgColor="bg-primary-s1" />
+        <ColorElement bgColor="bg-primary-s2" />
+        <ColorElement bgColor="bg-primary-s3" />
+        <ColorElement bgColor="bg-primary-s4" />
+        <ColorElement bgColor="bg-primary-s5" />
+        <ColorElement bgColor="bg-primary-s6" />
         <ColorElement
           bgColor="bg-primary-s7"
           textColor="text-color-primary-s7"
@@ -52,6 +34,17 @@ function ColorShades() {
         <ColorElement bgColor="bg-accent-s7" textColor="text-color-accent-s7" />
         <ColorElement bgColor="bg-accent-s8" textColor="text-color-accent-s8" />
         <ColorElement bgColor="bg-accent-s9" textColor="text-color-accent-s9" />
+      </div>
+      <div className="color-list">
+        <ColorElement bgColor="bg-neutral-s1" />
+        <ColorElement bgColor="bg-neutral-s2" />
+        <ColorElement bgColor="bg-neutral-s3" />
+        <ColorElement bgColor="bg-neutral-s4" />
+        <ColorElement bgColor="bg-neutral-s5" />
+        <ColorElement bgColor="bg-neutral-s6" />
+        <ColorElement bgColor="bg-neutral-s7" />
+        <ColorElement bgColor="bg-neutral-s8" />
+        <ColorElement bgColor="bg-neutral-s9" />
       </div>
     </article>
   );
