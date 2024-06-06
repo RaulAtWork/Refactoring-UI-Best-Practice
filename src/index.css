@@ -8,15 +8,3 @@
     min-height: 100vh;
 }
 
-
-.navbar{
-    gap: 5px;
-    display: flex;
-}
-
-.navbar > a{
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: white;
-}
