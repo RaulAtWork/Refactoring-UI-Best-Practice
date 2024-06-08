@@ -1,41 +1,5 @@
-/* LIGHT THEME*/
-:root {
-  --primary-color-100: hsl(190, 100%, 10%);
-  --primary-color-200: hsl(190, 100%, 25%);
-  --primary-color-300: hsl(190, 90%, 34%);
-  --primary-color-400: hsl(190, 85%, 38%);
-  --primary-color-500: hsl(190, 85%, 42%);
-  --primary-color-600: hsl(190, 86%, 47%);
-  --primary-color-700: hsl(190, 77%, 51%);
-  --primary-color-800: hsl(190, 82%, 59%);
-  --primary-color-900: hsl(190, 100%, 76%);
-  --accent-color-100: hsl(262, 100%, 16%);
-  --accent-color-200: hsl(262, 100%, 27%);
-  --accent-color-300: hsl(262, 100%, 33%);
-  --accent-color-400: hsl(262, 100%, 35%);
-  --accent-color-500: hsl(262, 100%, 38%);
-  --accent-color-600: hsl(262, 82%, 44%);
-  --accent-color-700: hsl(262, 70%, 49%);
-  --accent-color-800: hsl(262, 71%, 59%);
-  --accent-color-900: hsl(262, 100%, 80%);
-  --neutral-color-100: hsl(210, 11%, 15%);
-  --neutral-color-200: hsl(210, 10%, 23%);
-  --neutral-color-300: hsl(210, 9%, 31%);
-  --neutral-color-400: hsl(210, 7%, 46%);
-  --neutral-color-500: hsl(210, 11%, 71%);
-  --neutral-color-600: hsl(210, 14%, 83%);
-  --neutral-color-700: hsl(210, 14%, 89%);
-  --neutral-color-800: hsl(210, 16%, 93%);
-  --neutral-color-900: hsl(210, 17%, 98%);
-  --text-color: black;
-  --text-color-contrast: white;
-}
-
-/* DARK THEME */
-:root [data-theme=dark] {
-  --primary-color-100: black;
-  --text-color: white;
-  --text-color-contrast: black;
+#root {
+  background-color: var(--background-color);
 }
 
 .bg-primary-s1 {
@@ -146,25 +110,111 @@
   background-color: var(--neutral-color-900);
 }
 
-.container {
-  max-width: min(100% - 2rem, 60rem);
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  background-color: white;
-  margin: 0 auto;
-  padding: 18px;
+select {
+  font-weight: bold;
+  padding: 0.5em 0.75em;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: fit-content;
+  background-color: var(--neutral-color-400);
+  color: var(--text-color);
+}
+
+.primary-button {
+  font-weight: bold;
+  padding: 0.5em 0.75em;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: fit-content;
+  background-color: var(--primary-color-200);
+  border: 2px solid var(--primary-color-200);
+  color: var(--text-color);
+}
+.primary-button:hover {
+  background-color: var(--primary-color-100);
+  border: 2px solid var(--primary-color-100);
+  color: var(--text-color-contrast);
+}
+
+.secondary-button {
+  font-weight: bold;
+  padding: 0.5em 0.75em;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: fit-content;
+  border: 2px solid var(--primary-color-200);
+  color: var(--primary-color-200);
+}
+.secondary-button:hover {
+  background-color: var(--primary-color-100);
+}
+
+.secondary-button-contrast {
+  font-weight: bold;
+  padding: 0.5em 0.75em;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: fit-content;
+  background-color: var(--primary-color-300);
+  border: 2px solid var(--primary-color-300);
+  color: var(--primary-color-100);
+}
+.secondary-button-contrast:hover {
+  background-color: var(--neutral-color-200);
+  border: 2px solid var(--neutral-color-300);
+}
+
+.tertiary-button {
+  font-weight: bold;
+  padding: 0.5em 0.75em;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: fit-content;
+  color: var(--neutral-color-100);
 }
 
 .header {
-  background-color: var(--primary-color-700);
+  background-color: var(--primary-color-300);
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: row;
 }
 
 .footer {
-  background-color: var(--primary-color-700);
+  background-color: var(--primary-color-400);
+}
+
+.navbar {
+  gap: 20px;
+  display: flex;
+}
+.navbar > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary-color-100);
+  display: flex;
+  align-items: center;
+}
+.navbar a.active {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.container {
+  max-width: min(100% - 2rem, 60rem);
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  background-color: white;
+  margin: 15px auto;
+  padding: 18px;
+  border-radius: 10px;
 }
 
 .flex-columns {
@@ -187,7 +237,6 @@
 }
 
 .side-bar-list {
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -204,93 +253,6 @@
   gap: 10px;
 }
 
-.navbar {
-  gap: 20px;
-  display: flex;
-}
-.navbar > a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: var(--text-color);
-  display: flex;
-  align-items: center;
-}
-.navbar a.active {
-  color: var(--primary-color-200);
-}
-
-.primary-button {
-  font-weight: bold;
-  padding: 0.5em 0.75em;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-block;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: var(--primary-color-500);
-  border: 2px solid var(--primary-color-500);
-  color: var(--neutral-color-900);
-}
-.primary-button:hover {
-  background-color: var(--primary-color-200);
-  border: 2px solid var(--primary-color-200);
-}
-
-.secondary-button {
-  font-weight: bold;
-  padding: 0.5em 0.75em;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-block;
-  width: -moz-fit-content;
-  width: fit-content;
-  border: 2px solid var(--neutral-color-500);
-  color: var(--primary-color-500);
-}
-.secondary-button:hover {
-  background-color: var(--neutral-color-500);
-}
-
-.secondary-button-contrast {
-  font-weight: bold;
-  padding: 0.5em 0.75em;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-block;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: var(--primary-color-900);
-  border: 2px solid var(--primary-color-900);
-  color: var(--primary-color-200);
-}
-.secondary-button-contrast:hover {
-  background-color: var(--primary-color-700);
-  border: 2px solid var(--primary-color-700);
-}
-
-.tertiary-button {
-  font-weight: bold;
-  padding: 0.5em 0.75em;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-block;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: black;
-}
-
-select {
-  font-weight: bold;
-  padding: 0.5em 0.75em;
-  border-radius: 5px;
-  cursor: pointer;
-  display: inline-block;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: grey;
-}
-
 .color-shade {
   width: 90px;
   height: 40px;
@@ -305,4 +267,42 @@ select {
 
 .color-selector {
   margin-left: auto;
+}
+
+/* LIGHT THEME*/
+:root {
+  --primary-color-100: hsl(190, 80%, 20%);
+  --primary-color-200: hsl(190, 95%, 50%);
+  --primary-color-300: hsl(190, 95%, 70%);
+  --primary-color-400: hsl(190, 100%, 80%);
+  --accent-color-100: hsl(40, 100%, 16%);
+  --accent-color-200: hsl(40, 90%, 40%);
+  --accent-color-300: hsl(40, 90%, 50%);
+  --accent-color-400: hsl(40, 100%, 80%);
+  --neutral-color-100: hsl(255, 11%, 15%);
+  --neutral-color-200: hsl(255, 10%, 35%);
+  --neutral-color-300: hsl(255, 9%, 55%);
+  --neutral-color-400: hsl(255, 7%, 90%);
+  --text-color: black;
+  --text-color-contrast: white;
+  --background-color: #ededed ;
+}
+
+/* DARK THEME */
+:root [data-theme=dark] {
+  --primary-color-100: hsl(190, 80%, 20%);
+  --primary-color-200: hsl(190, 95%, 50%);
+  --primary-color-300: hsl(190, 95%, 70%);
+  --primary-color-400: hsl(190, 100%, 80%);
+  --accent-color-100: hsl(40, 100%, 16%);
+  --accent-color-200: hsl(40, 90%, 40%);
+  --accent-color-300: hsl(40, 90%, 50%);
+  --accent-color-400: hsl(40, 100%, 80%);
+  --neutral-color-100: hsl(255, 8%, 90%);
+  --neutral-color-200: hsl(255, 10%, 55%);
+  --neutral-color-300: hsl(255, 15%, 35%);
+  --neutral-color-400: hsl(255, 20%, 10%);
+  --text-color: white;
+  --text-color-contrast: black;
+  --background-color: black;
 }/*# sourceMappingURL=index.css.map */

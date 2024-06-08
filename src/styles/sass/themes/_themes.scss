@@ -1,4 +1,4 @@
-@use "variables" as *;
+@use "../abstracts/variables" as *;
 
 /* LIGHT THEME*/
 :root {
@@ -6,41 +6,48 @@
     --primary-color-200: #{$primary-color-s2};
     --primary-color-300: #{$primary-color-s3};
     --primary-color-400: #{$primary-color-s4};
-    --primary-color-500: #{$primary-color-s5};
-    --primary-color-600: #{$primary-color-s6};
-    --primary-color-700: #{$primary-color-s7};
-    --primary-color-800: #{$primary-color-s8};
-    --primary-color-900: #{$primary-color-s9};
+
     
     --accent-color-100: #{$accent-color-s1};
     --accent-color-200: #{$accent-color-s2};
     --accent-color-300: #{$accent-color-s3};
     --accent-color-400: #{$accent-color-s4};
-    --accent-color-500: #{$accent-color-s5};
-    --accent-color-600: #{$accent-color-s6};
-    --accent-color-700: #{$accent-color-s7};
-    --accent-color-800: #{$accent-color-s8};
-    --accent-color-900: #{$accent-color-s9};
+
 
     --neutral-color-100: #{$neutral-color-s1};
     --neutral-color-200: #{$neutral-color-s2};
     --neutral-color-300: #{$neutral-color-s3};
     --neutral-color-400: #{$neutral-color-s4};
-    --neutral-color-500: #{$neutral-color-s5};
-    --neutral-color-600: #{$neutral-color-s6};
-    --neutral-color-700: #{$neutral-color-s7};
-    --neutral-color-800: #{$neutral-color-s8};
-    --neutral-color-900: #{$neutral-color-s9};
+
 
     --text-color: black;
     --text-color-contrast: white;
+
+    --background-color: #ededed
 }
 
 /* DARK THEME */
 :root [data-theme="dark"]{
-    --primary-color-100: black;
+    --primary-color-100: #{$primary-color-s1-dark};
+    --primary-color-200: #{$primary-color-s2-dark};
+    --primary-color-300: #{$primary-color-s3-dark};
+    --primary-color-400: #{$primary-color-s4-dark};
+
+    
+    --accent-color-100: #{$accent-color-s1-dark};
+    --accent-color-200: #{$accent-color-s2-dark};
+    --accent-color-300: #{$accent-color-s3-dark};
+    --accent-color-400: #{$accent-color-s4-dark};
+
+
+    --neutral-color-100: #{$neutral-color-s1-dark};
+    --neutral-color-200: #{$neutral-color-s2-dark};
+    --neutral-color-300: #{$neutral-color-s3-dark};
+    --neutral-color-400: #{$neutral-color-s4-dark};
 
 
     --text-color: white;
     --text-color-contrast: black;
+
+    --background-color: black;
 }

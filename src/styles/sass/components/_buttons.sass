@@ -1,0 +1,30 @@
+@use "../abstracts/mixins"
+
+.primary-button
+    @include mixins.button
+    background-color: var(--primary-color-200)
+    border: 2px solid var(--primary-color-200)
+    color: var(--text-color)
+    &:hover
+        background-color: var(--primary-color-100)
+        border: 2px solid var(--primary-color-100)
+        color: var(--text-color-contrast)
+
+.secondary-button
+    @include mixins.button
+    border: 2px solid var(--primary-color-200)
+    color: var(--primary-color-200)
+    &:hover
+        background-color: var(--primary-color-100)
+
+.secondary-button-contrast
+    @include mixins.button
+    background-color: var(--primary-color-300)
+    border: 2px solid var(--primary-color-300)
+    color: var(--primary-color-100)
+    &:hover
+        background-color: var(--neutral-color-200)
+        border: 2px solid var(--neutral-color-300)
+.tertiary-button
+    @include mixins.button
+    color: var(--neutral-color-100)

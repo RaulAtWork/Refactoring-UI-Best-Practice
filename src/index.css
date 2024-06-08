@@ -2,7 +2,6 @@
 @import "styles/CSS/index.css";
 
 #root{
-    background-color: lightgray;
     display: flex;
     flex-direction: column;
     min-height: 100vh;

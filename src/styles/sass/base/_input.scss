@@ -1,0 +1,9 @@
+@use "../abstracts/mixins";
+
+//primitive types
+
+select{
+    @include mixins.button;
+    background-color: var(--neutral-color-400);
+    color: var(--text-color);
+}

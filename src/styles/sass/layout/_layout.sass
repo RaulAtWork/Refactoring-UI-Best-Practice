@@ -1,4 +1,4 @@
-@use "variables"
+@use "../abstracts/variables"
 
 .container
     max-width: min(100% - 2rem, 60rem)
@@ -6,16 +6,9 @@
     flex-grow: 1
     flex-direction: column
     background-color: white
-    margin: 0 auto
+    margin: 15px auto
     padding: variables.$padding-medium
-
-.header
-    background-color: var(--primary-color-700)
-    padding: .5rem 1rem
-    display: flex
-    flex-direction: row
-.footer
-    background-color: var(--primary-color-700)
+    border-radius: 10px
 
 .flex-columns
     display: flex
@@ -46,17 +39,3 @@
     flex-direction: columns
     flex-wrap: wrap
     gap: 10px
-
-.navbar
-    gap: 20px
-    display: flex
-
-    > a
-        text-decoration: none
-        text-transform: uppercase
-        font-weight: bold
-        color: var(--text-color)
-        display: flex
-        align-items: center
-    a.active
-        color: var(--primary-color-200)
